@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Wrench, Zap, Users, Settings, Cable, Fuel, ArrowUpDown, Menu, X } from "lucide-react";
+import { Shield, Zap, Users, Settings, Menu, X } from "lucide-react";
 import ostecLogo from "@/assets/ostec-logo.jpg";
 import bgHero from "@/assets/bg-hero.jpg";
 import { useState } from "react";
@@ -7,7 +7,7 @@ import { useState } from "react";
 const NAV_LINKS = [
   { label: "Inicio", href: "#inicio" },
   { label: "Nosotros", href: "/nosotros" },
-  { label: "Servicios", href: "#servicios" },
+  { label: "Servicios", href: "/servicios" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -34,12 +34,6 @@ const VALUES = [
   },
 ];
 
-const SERVICES = [
-  { icon: Wrench, title: "Mantenimiento Preventivo / Correctivo" },
-  { icon: Cable, title: "Instalaciones Llave en Mano" },
-  { icon: ArrowUpDown, title: "Instalaciones en Paralelo" },
-  { icon: Fuel, title: "Conversiones a Gas" },
-];
 
 const Index = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -93,20 +87,6 @@ const Index = () => {
           </Button>
         </section>
 
-        {/* Servicios */}
-        <section id="servicios" className="border-t border-white/10">
-          <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
-            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl text-white">Nuestros Servicios</h2>
-            <div className="mt-10 grid gap-4 sm:grid-cols-2">
-              {SERVICES.map((s) => (
-                <div key={s.title} className="flex items-center gap-4 rounded-lg border border-white/10 p-5 transition-colors hover:bg-white/10">
-                  <s.icon className="h-5 w-5 shrink-0 text-primary" />
-                  <span className="font-medium text-white">{s.title}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Footer */}
         <footer id="contacto" className="border-t border-white/10 bg-black/40">
