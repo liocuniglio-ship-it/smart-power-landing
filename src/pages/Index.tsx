@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Zap, Users, Settings, Menu, X, Mail, MapPin } from "lucide-react";
+import { Shield, Zap, Users, Settings, Menu, X, Mail, MapPin, MessageCircle } from "lucide-react";
 import ostecLogo from "@/assets/ostec-logo.jpg";
 import bgHero from "@/assets/bg-hero.jpg";
 import { useState } from "react";
@@ -111,7 +111,21 @@ const Index = () => {
             <h2 className="text-2xl font-bold tracking-tight sm:text-3xl text-white">Contacto</h2>
             <p className="mt-2 text-white/60">Estamos para ayudarte. Elegí el canal que prefieras.</p>
 
-            <div className="mt-10 grid gap-6 sm:grid-cols-2">
+            <div className="mt-10 grid gap-6 sm:grid-cols-3">
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/541122462787?text=Hola%2C%20me%20contacto%20desde%20la%20web%20de%20Ostec%20Energy."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 rounded-lg border border-white/10 bg-white/5 p-6 transition-colors hover:bg-white/10"
+              >
+                <MessageCircle className="h-6 w-6 shrink-0 text-green-400" />
+                <div>
+                  <p className="font-semibold text-white">WhatsApp</p>
+                  <p className="text-sm text-white/60">(011) 2246 2787</p>
+                </div>
+              </a>
+
               {/* Mail Comercial */}
               <a
                 href="mailto:comercial@ostecenergy.com.ar"
