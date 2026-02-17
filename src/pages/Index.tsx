@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Zap, Users, Settings, Menu, X } from "lucide-react";
+import { Shield, Zap, Users, Settings, Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import ostecLogo from "@/assets/ostec-logo.jpg";
 import bgHero from "@/assets/bg-hero.jpg";
 import { useState } from "react";
@@ -88,16 +88,65 @@ const Index = () => {
         </section>
 
 
-        {/* Footer */}
-        <footer id="contacto" className="border-t border-white/10 bg-black/40">
-          <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6">
-            <p className="text-lg font-semibold text-white">Ostec Energy es la mejor opción.</p>
-            <div className="mt-4 space-y-1 text-sm text-white/70">
-              <p>📍 Ciudad Autónoma De Buenos Aires - Argentina</p>
-              <p>📞 (011) 2246 2787</p>
-              <p>✉️ comercial@ostecenergy.com.ar</p>
+        {/* Contacto */}
+        <section id="contacto" className="border-t border-white/10">
+          <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl text-white">Contacto</h2>
+            <p className="mt-2 text-white/60">Estamos para ayudarte. Elegí el canal que prefieras.</p>
+
+            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {/* WhatsApp / Teléfono */}
+              <a
+                href="https://wa.me/541122462787?text=Hola%2C%20me%20contacto%20desde%20la%20web%20de%20Ostec%20Energy."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 rounded-lg border border-white/10 bg-white/5 p-6 transition-colors hover:bg-white/10"
+              >
+                <Phone className="h-6 w-6 shrink-0 text-green-400" />
+                <div>
+                  <p className="font-semibold text-white">WhatsApp</p>
+                  <p className="text-sm text-white/60">(011) 2246 2787</p>
+                </div>
+              </a>
+
+              {/* Mail Comercial */}
+              <a
+                href="mailto:comercial@ostecenergy.com.ar"
+                className="flex items-center gap-4 rounded-lg border border-white/10 bg-white/5 p-6 transition-colors hover:bg-white/10"
+              >
+                <Mail className="h-6 w-6 shrink-0 text-primary" />
+                <div>
+                  <p className="font-semibold text-white">Mail Comercial</p>
+                  <p className="text-sm text-white/60">comercial@ostecenergy.com.ar</p>
+                </div>
+              </a>
+
+              {/* Mail Técnico */}
+              <a
+                href="mailto:tecnico@ostecenergy.com.ar"
+                className="flex items-center gap-4 rounded-lg border border-white/10 bg-white/5 p-6 transition-colors hover:bg-white/10"
+              >
+                <Mail className="h-6 w-6 shrink-0 text-primary" />
+                <div>
+                  <p className="font-semibold text-white">Mail Técnico</p>
+                  <p className="text-sm text-white/60">tecnico@ostecenergy.com.ar</p>
+                </div>
+              </a>
             </div>
-            <p className="mt-8 text-xs text-white/50">© {new Date().getFullYear()} Ostec Energy. Todos los derechos reservados.</p>
+
+            {/* Ubicación */}
+            <div className="mt-8 flex items-center gap-3 text-white/60">
+              <MapPin className="h-5 w-5 shrink-0" />
+              <p>Ciudad Autónoma De Buenos Aires - Argentina</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="border-t border-white/10 bg-black/40">
+          <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 text-center">
+            <p className="text-sm text-white/60">Ostec Energy es la mejor opción.</p>
+            <p className="mt-2 text-xs text-white/40">© {new Date().getFullYear()} Ostec Energy. Todos los derechos reservados.</p>
           </div>
         </footer>
       </div>
