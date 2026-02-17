@@ -87,6 +87,23 @@ const Index = () => {
           </Button>
         </section>
 
+        {/* Valor Agregado */}
+        <section className="border-t border-white/10">
+          <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl text-white">A qué nos dedicamos</h2>
+            <div className="mt-10 grid gap-6 sm:grid-cols-2">
+              {VALUES.map((v) => (
+                <div key={v.title} className="flex gap-4 rounded-lg border border-white/10 bg-white/5 p-5">
+                  <v.icon className="h-5 w-5 shrink-0 text-primary mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-white">{v.title}</h3>
+                    <p className="mt-1 text-sm text-white/60">{v.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* Contacto */}
         <section id="contacto" className="border-t border-white/10">
