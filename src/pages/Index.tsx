@@ -83,7 +83,7 @@ const Index = () => {
             venta, alquiler y mantenimiento de Grupos Electrógenos y Tableros de Transferencia.
           </p>
           <Button size="lg" className="mt-8 text-base" asChild>
-            <a href="#">Acceso a APP</a>
+            <a href="#">Portal Clientes</a>
           </Button>
         </section>
 
