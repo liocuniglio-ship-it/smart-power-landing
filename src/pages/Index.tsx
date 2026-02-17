@@ -114,7 +114,7 @@ const Index = () => {
             <div className="mt-10 grid gap-6 sm:grid-cols-3">
               {/* WhatsApp */}
               <a
-                href="https://wa.me/541122462787?text=Hola%2C%20me%20contacto%20desde%20la%20web%20de%20Ostec%20Energy."
+                href="https://wa.me/5491122462787?text=Hola%2C%20me%20contacto%20desde%20la%20web%20de%20Ostec%20Energy."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 rounded-lg border border-white/10 bg-white/5 p-6 transition-colors hover:bg-white/10"
