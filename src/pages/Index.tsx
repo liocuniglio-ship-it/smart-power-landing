@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Wrench, Zap, Users, Settings, Cable, Fuel, ArrowUpDown, Menu, X } from "lucide-react";
 import ostecLogo from "@/assets/ostec-logo.jpg";
+import bgHero from "@/assets/bg-hero.jpg";
 import { useState } from "react";
 
 const NAV_LINKS = [
@@ -44,7 +45,7 @@ const Index = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen text-foreground" style={{ backgroundImage: `url(${ostecLogo})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+    <div className="min-h-screen text-foreground" style={{ backgroundImage: `url(${bgHero})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
       <div className="min-h-screen bg-background/90">
         {/* Header */}
         <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
