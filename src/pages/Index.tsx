@@ -123,13 +123,13 @@ const Index = () => {
 
               {/* Mail Técnico */}
               <a
-                href="mailto:tecnico@ostecenergy.com.ar"
+                href="mailto:tecnica@ostecnergy.com.ar"
                 className="flex items-center gap-4 rounded-lg border border-white/10 bg-white/5 p-6 transition-colors hover:bg-white/10"
               >
                 <Mail className="h-6 w-6 shrink-0 text-primary" />
                 <div>
                   <p className="font-semibold text-white">Mail Técnico</p>
-                  <p className="text-sm text-white/60">tecnico@ostecenergy.com.ar</p>
+                  <p className="text-sm text-white/60">tecnica@ostecnergy.com.ar</p>
                 </div>
               </a>
             </div>
