@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Wrench, Zap, Users, Settings, Cable, Fuel, ArrowUpDown, Menu, X } from "lucide-react";
+import ostecLogo from "@/assets/ostec-logo.jpg";
 import { useState } from "react";
 
 const NAV_LINKS = [
@@ -47,8 +48,8 @@ const Index = () => {
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur-sm">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
-          <a href="#inicio" className="text-xl font-bold tracking-tight text-primary">
-            OSTEC ENERGY
+          <a href="#inicio">
+            <img src={ostecLogo} alt="Ostec Energy" className="h-10 w-auto" />
           </a>
 
           {/* Desktop nav */}
