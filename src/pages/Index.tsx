@@ -45,7 +45,7 @@ const Index = () => {
         <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur-sm">
           <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
             <a href="/">
-              <img src={ostecLogo} alt="Ostec Energy" className="h-16 w-auto sm:h-20" />
+              <img src={ostecLogo} alt="Ostec Energy" className="h-20 w-auto sm:h-28 rounded-md" />
             </a>
 
             {/* Desktop nav */}
