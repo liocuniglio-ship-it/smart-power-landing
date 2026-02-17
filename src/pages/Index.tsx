@@ -83,7 +83,7 @@ const Index = () => {
             venta, alquiler y mantenimiento de Grupos Electrógenos y Tableros de Transferencia.
           </p>
           <Button size="lg" className="mt-8 text-base" asChild>
-            <a href="https://lovable.dev/projects/9218f48f-e27b-431f-9584-7c21102b7a97?magic_link=mc_9fec3cf6-5332-487d-beda-8ef7f75f6737" target="_blank" rel="noopener noreferrer">Portal Clientes</a>
+            <a href="https://volt-vault-wiz.lovable.app" target="_blank" rel="noopener noreferrer">Portal Clientes</a>
           </Button>
         </section>
 
