@@ -84,7 +84,7 @@ const Index = () => {
             venta, alquiler y mantenimiento de Grupos Electrógenos y Tableros de Transferencia.
           </p>
           <Button size="lg" className="mt-8 text-base" asChild>
-            <a href="https://volt-vault-wiz.lovable.app" target="_blank" rel="noopener noreferrer">Portal Clientes</a>
+            <a href="https://app.ostecenergy.com.ar/auth" target="_blank" rel="noopener noreferrer">Portal Clientes</a>
           </Button>
         </section>
 
