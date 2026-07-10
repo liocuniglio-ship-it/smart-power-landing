@@ -3,6 +3,26 @@ import { Shield, Zap, Users, Settings, Menu, X, Mail, MapPin, MessageCircle } fr
 import ostecLogo from "@/assets/ostec-logo.jpg";
 import bgHero from "@/assets/bg-hero.jpg";
 import { useState } from "react";
+import Seo from "@/components/Seo";
+
+const FAQS = [
+  {
+    q: "¿Qué servicios brinda Ostec Energy para grupos electrógenos?",
+    a: "Ofrecemos venta, alquiler, instalación llave en mano y mantenimiento preventivo y correctivo de grupos electrógenos y tableros de transferencia manuales y automáticos en CABA y toda la Provincia de Buenos Aires.",
+  },
+  {
+    q: "¿Ofrecen servicio técnico de emergencia 24 horas?",
+    a: "Sí. Contamos con guardia técnica 24 horas los 365 días del año para atender urgencias sobre grupos electrógenos y tableros de transferencia.",
+  },
+  {
+    q: "¿En qué zonas trabajan?",
+    a: "Prestamos servicio en la Ciudad Autónoma de Buenos Aires (CABA), Gran Buenos Aires y en toda la Argentina bajo coordinación previa.",
+  },
+  {
+    q: "¿Cada cuánto se debe hacer mantenimiento a un grupo electrógeno?",
+    a: "Recomendamos mantenimientos preventivos programados cada 250 horas de uso o al menos una vez al año, con pruebas de arranque mensuales y bancos de carga periódicos para asegurar disponibilidad.",
+  },
+];
 
 const NAV_LINKS = [
   { label: "Inicio", href: "#inicio" },
