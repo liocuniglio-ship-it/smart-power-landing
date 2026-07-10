@@ -8,7 +8,7 @@ import Seo from "@/components/Seo";
 const FAQS = [
   {
     q: "¿Qué servicios brinda Ostec Energy para grupos electrógenos?",
-    a: "Ofrecemos venta, alquiler, instalación llave en mano y mantenimiento preventivo y correctivo de grupos electrógenos y tableros de transferencia manuales y automáticos en CABA y toda la Provincia de Buenos Aires.",
+    a: "Nuestro servicio principal es el mantenimiento preventivo y correctivo de grupos electrógenos y tableros de transferencia (manuales y automáticos). Además ofrecemos venta, alquiler e instalación llave en mano en CABA y toda la Provincia de Buenos Aires.",
   },
   {
     q: "¿Ofrecen servicio técnico de emergencia 24 horas?",
