@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Zap, Users, Settings, Menu, X, Mail, MapPin, MessageCircle } from "lucide-react";
+import { Shield, Zap, Users, Settings, Menu, X, Mail, MapPin, MessageCircle, Wrench, AlertTriangle } from "lucide-react";
 import ostecLogo from "@/assets/ostec-logo.jpg";
 import bgHero from "@/assets/bg-hero.jpg";
 import { useState } from "react";
@@ -28,7 +28,7 @@ const NAV_LINKS = [
   { label: "Inicio", href: "#inicio" },
   { label: "Nosotros", href: "/nosotros" },
   { label: "Servicios", href: "/servicios" },
-  
+  { label: "Mantenimiento", href: "#mantenimiento" },
   { label: "FAQ", href: "#faq" },
   { label: "Contacto", href: "#contacto" },
 ];
@@ -112,7 +112,7 @@ const Index = () => {
           <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl text-white">
             Grupos Electrógenos.
             <br />
-            <span className="text-primary">Mantenimiento Inteligente.</span>
+            <span className="text-primary">Mantenimiento Preventivo y Correctivo.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg">
             Nuestra visión es ser referentes del mercado en soluciones de energía, reconocidos por nuestra
@@ -138,6 +138,49 @@ const Index = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Mantenimiento Preventivo y Correctivo */}
+        <section id="mantenimiento" className="border-t border-white/10">
+          <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl text-white">Mantenimiento Preventivo y Correctivo</h2>
+            <p className="mt-2 max-w-3xl text-white/60">
+              Aseguramos la disponibilidad de tu grupo electrógeno con planes programados y respuesta técnica ante fallas.
+            </p>
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              <div className="rounded-lg border border-white/10 bg-white/5 p-6">
+                <div className="flex items-center gap-3">
+                  <Wrench className="h-6 w-6 shrink-0 text-primary" />
+                  <h3 className="text-lg font-semibold text-white">Mantenimiento Preventivo</h3>
+                </div>
+                <p className="mt-3 text-sm text-white/70">
+                  Rutinas programadas para evitar cortes y prolongar la vida útil del equipo.
+                </p>
+                <ul className="mt-4 space-y-2 text-sm text-white/70">
+                  <li>• Cambio de aceite, filtros y refrigerante</li>
+                  <li>• Pruebas de arranque y transferencia</li>
+                  <li>• Revisión de baterías, tableros y protecciones</li>
+                  <li>• Bancos de carga y reportes técnicos</li>
+                </ul>
+              </div>
+
+              <div className="rounded-lg border border-white/10 bg-white/5 p-6">
+                <div className="flex items-center gap-3">
+                  <AlertTriangle className="h-6 w-6 shrink-0 text-primary" />
+                  <h3 className="text-lg font-semibold text-white">Mantenimiento Correctivo</h3>
+                </div>
+                <p className="mt-3 text-sm text-white/70">
+                  Diagnóstico y reparación ante fallas, con guardia técnica 24/7 los 365 días del año.
+                </p>
+                <ul className="mt-4 space-y-2 text-sm text-white/70">
+                  <li>• Detección y reparación de fallas mecánicas y eléctricas</li>
+                  <li>• Reemplazo de componentes originales</li>
+                  <li>• Puesta en marcha y verificación de funcionamiento</li>
+                  <li>• Atención de emergencias 24 hs</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
