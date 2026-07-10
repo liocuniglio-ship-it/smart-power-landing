@@ -6,6 +6,11 @@ import Seo from "@/components/Seo";
 const Nosotros = () => {
   return (
     <div className="min-h-screen text-white" style={{ backgroundImage: `url(${bgHero})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+      <Seo
+        path="/nosotros"
+        title="Nosotros | Ostec Energy — Especialistas en Grupos Electrógenos"
+        description="Conocé a Ostec Energy: equipo técnico especializado en venta, alquiler y mantenimiento de grupos electrógenos y tableros de transferencia. Calidad certificada y respaldo profesional."
+      />
       <div className="min-h-screen bg-black/60">
         {/* Header */}
         <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur-sm">
