@@ -1,4 +1,5 @@
 import { ArrowLeft, ImageIcon } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import ostecLogo from "@/assets/ostec-logo.jpg";
 import bgHero from "@/assets/bg-hero.jpg";
 import Seo from "@/components/Seo";
@@ -6,11 +7,13 @@ import Seo from "@/components/Seo";
 const Trabajos = () => {
   return (
     <div className="min-h-screen text-white" style={{ backgroundImage: `url(${bgHero})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+      <Helmet><meta name="robots" content="noindex,nofollow" /></Helmet>
       <Seo
         path="/trabajos"
         title="Trabajos Realizados | Proyectos de Grupos Electrógenos — Ostec Energy"
         description="Galería de instalaciones, mantenimientos y puestas en marcha de grupos electrógenos y tableros de transferencia ejecutados por Ostec Energy."
       />
+
       <div className="min-h-screen bg-black/60">
         {/* Header */}
         <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur-sm">
