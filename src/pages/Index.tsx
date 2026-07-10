@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     q: "¿Ofrecen servicio técnico de emergencia 24 horas?",
-    a: "Sí. Contamos con guardia técnica 24 horas los 365 días del año para atender urgencias sobre grupos electrógenos y tableros de transferencia.",
+    a: "Sí. Brindamos servicio técnico 24 horas los 365 días del año exclusivamente a clientes abonados a nuestros planes de mantenimiento.",
   },
   {
     q: "¿En qué zonas trabajan?",
