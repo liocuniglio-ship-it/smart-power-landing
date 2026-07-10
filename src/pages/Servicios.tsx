@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Wrench, Shield, Settings, Cable, ArrowLeft } from "lucide-react";
+import { Wrench, Settings, Cable, ArrowLeft } from "lucide-react";
 import ostecLogo from "@/assets/ostec-logo.jpg";
 import bgHero from "@/assets/bg-hero.jpg";
+import Seo from "@/components/Seo";
 
 const Servicios = () => {
   return (

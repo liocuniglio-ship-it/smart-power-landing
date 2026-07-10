@@ -1,6 +1,7 @@
 import { ArrowLeft, ImageIcon } from "lucide-react";
 import ostecLogo from "@/assets/ostec-logo.jpg";
 import bgHero from "@/assets/bg-hero.jpg";
+import Seo from "@/components/Seo";
 
 const Trabajos = () => {
   return (

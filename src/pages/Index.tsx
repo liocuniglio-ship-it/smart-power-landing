@@ -29,6 +29,7 @@ const NAV_LINKS = [
   { label: "Nosotros", href: "/nosotros" },
   { label: "Servicios", href: "/servicios" },
   { label: "Trabajos", href: "/trabajos" },
+  { label: "FAQ", href: "#faq" },
   { label: "Contacto", href: "#contacto" },
 ];
 

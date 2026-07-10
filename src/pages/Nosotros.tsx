@@ -1,6 +1,7 @@
-import { Shield, Zap, Users, Settings, ArrowLeft } from "lucide-react";
+import { Shield, Users, Settings, ArrowLeft } from "lucide-react";
 import ostecLogo from "@/assets/ostec-logo.jpg";
 import bgHero from "@/assets/bg-hero.jpg";
+import Seo from "@/components/Seo";
 
 const Nosotros = () => {
   return (
