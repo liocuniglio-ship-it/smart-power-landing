@@ -172,13 +172,13 @@ const Index = () => {
                   <h3 className="text-lg font-semibold text-white">Mantenimiento Correctivo</h3>
                 </div>
                 <p className="mt-3 text-sm text-white/70">
-                  Diagnóstico y reparación ante fallas, con guardia técnica 24/7 los 365 días del año.
+                  Diagnóstico y reparación ante fallas. Guardia técnica 24/7 los 365 días del año para clientes abonados.
                 </p>
                 <ul className="mt-4 space-y-2 text-sm text-white/70">
                   <li>• Detección y reparación de fallas mecánicas y eléctricas</li>
                   <li>• Reemplazo de componentes originales</li>
                   <li>• Puesta en marcha y verificación de funcionamiento</li>
-                  <li>• Atención de emergencias 24 hs</li>
+                  <li>• Atención de emergencias 24 hs (clientes abonados)</li>
                 </ul>
               </div>
             </div>

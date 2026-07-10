@@ -52,7 +52,7 @@ const Servicios = () => {
                 Para evitar desperfectos en los grupos electrógenos, los mantenimientos o las revisiones periódicas programadas siempre evitan posteriores reparaciones. Los contratos de mantenimiento que ofrecemos a nuestros clientes dan posibilidad de mantener sus equipos en buen funcionamiento.
               </p>
               <p>
-                <strong className="text-white">Las ventajas y sus posibilidades:</strong> recambios originales, bancos de carga, servicio 24 horas / 365 días, diagnóstico de sus equipos con informes sobre medidas a realizar. Diseñamos los contratos a su medida en función de sus necesidades. Nuestros técnicos especializados le ayudarán en su proyecto.
+                <strong className="text-white">Las ventajas y sus posibilidades:</strong> recambios originales, bancos de carga, servicio 24 horas / 365 días para clientes abonados, diagnóstico de sus equipos con informes sobre medidas a realizar. Diseñamos los contratos a su medida en función de sus necesidades. Nuestros técnicos especializados le ayudarán en su proyecto.
               </p>
               <p className="text-primary font-semibold text-lg">
                 Confíe en la experiencia y los profesionales que OSTEC ENERGY pone a su disposición.
