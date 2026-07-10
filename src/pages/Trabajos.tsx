@@ -10,7 +10,7 @@ const Trabajos = () => {
       <Helmet><meta name="robots" content="noindex,nofollow" /></Helmet>
       <Seo
         path="/trabajos"
-        title="Trabajos Realizados | Proyectos de Grupos Electrógenos — Ostec Energy"
+        title="Trabajos Realizados | Ostec Energy"
         description="Galería de instalaciones, mantenimientos y puestas en marcha de grupos electrógenos y tableros de transferencia ejecutados por Ostec Energy."
       />
 

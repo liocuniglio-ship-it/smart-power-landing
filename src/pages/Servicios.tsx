@@ -9,7 +9,7 @@ const Servicios = () => {
     <div className="min-h-screen text-white" style={{ backgroundImage: `url(${bgHero})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
       <Seo
         path="/servicios"
-        title="Servicios | Mantenimiento e Instalación de Grupos Electrógenos"
+        title="Servicios | Mantenimiento de Grupos Electrógenos"
         description="Mantenimiento preventivo y correctivo, instalaciones llave en mano y puesta en marcha de grupos electrógenos y tableros de transferencia. Servicio 24/7 en CABA y Buenos Aires."
         jsonLd={[
           { "@context": "https://schema.org", "@type": "Service", serviceType: "Mantenimiento de grupos electrógenos", provider: { "@type": "LocalBusiness", name: "Ostec Energy", url: "https://ostecenergy.com.ar/" }, areaServed: "Argentina" },
