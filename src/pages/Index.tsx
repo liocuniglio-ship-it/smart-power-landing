@@ -141,6 +141,24 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Preguntas Frecuentes (AEO) */}
+        <section id="faq" className="border-t border-white/10">
+          <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl text-white">Preguntas Frecuentes</h2>
+            <p className="mt-2 text-white/60">Respuestas rápidas sobre nuestros servicios de grupos electrógenos.</p>
+            <div className="mt-8 space-y-4">
+              {FAQS.map((f) => (
+                <details key={f.q} className="group rounded-lg border border-white/10 bg-white/5 p-5">
+                  <summary className="cursor-pointer list-none font-semibold text-white marker:hidden">
+                    {f.q}
+                  </summary>
+                  <p className="mt-3 text-sm leading-relaxed text-white/70">{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Contacto */}
         <section id="contacto" className="border-t border-white/10">
           <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
