@@ -61,6 +61,20 @@ const Index = () => {
 
   return (
     <div className="min-h-screen text-white" style={{ backgroundImage: `url(${bgHero})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+      <Seo
+        path="/"
+        title="Ostec Energy | Grupos Electrógenos: Venta, Alquiler y Mantenimiento"
+        description="Venta, alquiler, instalación y mantenimiento de grupos electrógenos y tableros de transferencia en CABA y Buenos Aires. Servicio técnico 24/7 con reportes instantáneos."
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: FAQS.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }}
+      />
       <div className="min-h-screen bg-black/60">
         {/* Header */}
         <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur-sm">
