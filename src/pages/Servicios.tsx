@@ -1,11 +1,21 @@
 import { Button } from "@/components/ui/button";
-import { Wrench, Shield, Settings, Cable, ArrowLeft } from "lucide-react";
+import { Wrench, Settings, Cable, ArrowLeft } from "lucide-react";
 import ostecLogo from "@/assets/ostec-logo.jpg";
 import bgHero from "@/assets/bg-hero.jpg";
+import Seo from "@/components/Seo";
 
 const Servicios = () => {
   return (
     <div className="min-h-screen text-white" style={{ backgroundImage: `url(${bgHero})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+      <Seo
+        path="/servicios"
+        title="Servicios | Mantenimiento e Instalación de Grupos Electrógenos"
+        description="Mantenimiento preventivo y correctivo, instalaciones llave en mano y puesta en marcha de grupos electrógenos y tableros de transferencia. Servicio 24/7 en CABA y Buenos Aires."
+        jsonLd={[
+          { "@context": "https://schema.org", "@type": "Service", serviceType: "Mantenimiento de grupos electrógenos", provider: { "@type": "LocalBusiness", name: "Ostec Energy", url: "https://ostecenergy.com.ar/" }, areaServed: "Argentina" },
+          { "@context": "https://schema.org", "@type": "Service", serviceType: "Instalación llave en mano de grupos electrógenos y tableros de transferencia", provider: { "@type": "LocalBusiness", name: "Ostec Energy", url: "https://ostecenergy.com.ar/" }, areaServed: "Argentina" },
+        ]}
+      />
       <div className="min-h-screen bg-black/60">
         {/* Header */}
         <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur-sm">

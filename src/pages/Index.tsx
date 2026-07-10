@@ -3,12 +3,33 @@ import { Shield, Zap, Users, Settings, Menu, X, Mail, MapPin, MessageCircle } fr
 import ostecLogo from "@/assets/ostec-logo.jpg";
 import bgHero from "@/assets/bg-hero.jpg";
 import { useState } from "react";
+import Seo from "@/components/Seo";
+
+const FAQS = [
+  {
+    q: "¿Qué servicios brinda Ostec Energy para grupos electrógenos?",
+    a: "Ofrecemos venta, alquiler, instalación llave en mano y mantenimiento preventivo y correctivo de grupos electrógenos y tableros de transferencia manuales y automáticos en CABA y toda la Provincia de Buenos Aires.",
+  },
+  {
+    q: "¿Ofrecen servicio técnico de emergencia 24 horas?",
+    a: "Sí. Contamos con guardia técnica 24 horas los 365 días del año para atender urgencias sobre grupos electrógenos y tableros de transferencia.",
+  },
+  {
+    q: "¿En qué zonas trabajan?",
+    a: "Prestamos servicio en la Ciudad Autónoma de Buenos Aires (CABA), Gran Buenos Aires y en toda la Argentina bajo coordinación previa.",
+  },
+  {
+    q: "¿Cada cuánto se debe hacer mantenimiento a un grupo electrógeno?",
+    a: "Recomendamos mantenimientos preventivos programados cada 250 horas de uso o al menos una vez al año, con pruebas de arranque mensuales y bancos de carga periódicos para asegurar disponibilidad.",
+  },
+];
 
 const NAV_LINKS = [
   { label: "Inicio", href: "#inicio" },
   { label: "Nosotros", href: "/nosotros" },
   { label: "Servicios", href: "/servicios" },
   { label: "Trabajos", href: "/trabajos" },
+  { label: "FAQ", href: "#faq" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -41,6 +62,20 @@ const Index = () => {
 
   return (
     <div className="min-h-screen text-white" style={{ backgroundImage: `url(${bgHero})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+      <Seo
+        path="/"
+        title="Ostec Energy | Grupos Electrógenos: Venta, Alquiler y Mantenimiento"
+        description="Venta, alquiler, instalación y mantenimiento de grupos electrógenos y tableros de transferencia en CABA y Buenos Aires. Servicio técnico 24/7 con reportes instantáneos."
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: FAQS.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }}
+      />
       <div className="min-h-screen bg-black/60">
         {/* Header */}
         <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur-sm">
@@ -102,6 +137,24 @@ const Index = () => {
                     <p className="mt-1 text-sm text-white/60">{v.desc}</p>
                   </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Preguntas Frecuentes (AEO) */}
+        <section id="faq" className="border-t border-white/10">
+          <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl text-white">Preguntas Frecuentes</h2>
+            <p className="mt-2 text-white/60">Respuestas rápidas sobre nuestros servicios de grupos electrógenos.</p>
+            <div className="mt-8 space-y-4">
+              {FAQS.map((f) => (
+                <details key={f.q} className="group rounded-lg border border-white/10 bg-white/5 p-5">
+                  <summary className="cursor-pointer list-none font-semibold text-white marker:hidden">
+                    {f.q}
+                  </summary>
+                  <p className="mt-3 text-sm leading-relaxed text-white/70">{f.a}</p>
+                </details>
               ))}
             </div>
           </div>
