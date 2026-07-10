@@ -75,9 +75,9 @@ const Index = () => {
         {/* Hero */}
         <section id="inicio" className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-24">
           <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl text-white">
-            Mantenimiento Inteligente.
+            Grupos Electrógenos.
             <br />
-            <span className="text-primary">Reportes Instantáneos.</span>
+            <span className="text-primary">Mantenimiento Inteligente.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg">
             Nuestra meta es ocuparnos de resolver problemas con eficiencia, seguridad y rapidez en la
