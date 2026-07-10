@@ -20,54 +20,40 @@ const Nosotros = () => {
         </header>
 
         <main className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl text-white">Nosotros</h1>
+          <h1 className="text-3xl font-bold tracking-tight sm:text-4xl text-white">Nuestra Visión</h1>
 
           <div className="mt-8 space-y-6 text-base leading-relaxed text-white/70">
             <p>
-              Nuestra meta es ocupar un lugar en el mercado donde ser reconocidos por la capacidad de resolver problemas, con eficiencia, seguridad y rapidez en la venta, alquiler y mantenimiento de Grupos Electrógenos y Tableros de Transferencia.
-            </p>
-            <p>
-              Además de brindar precios, calidad y servicio, recurrimos a entregar valor agregado: conocimiento, calidad de servicio, cordialidad y cumplimiento en entrega.
-            </p>
-            <p>
-              Contamos con profesionales con el mejor nivel técnico y años de experiencia en el mercado, obteniendo no solo agilidad y fluidez en la ejecución de cada proyecto, sino también efectividad y seguridad en tiempo y forma.
-            </p>
-            <p>
-              Disponemos de equipos de alta calidad, testeados rigurosamente y certificados bajo normas nacionales e internacionales de calidad.
+              Ser el referente del mercado en soluciones de energía, reconocidos por nuestra capacidad de respuesta, eficiencia y seguridad en la venta, alquiler y mantenimiento de Grupos Electrógenos y Tableros de Transferencia.
             </p>
           </div>
 
-          <h2 className="mt-12 text-2xl font-bold tracking-tight text-white">Nuestros Pilares</h2>
+          <h2 className="mt-12 text-2xl font-bold tracking-tight text-white">Qué nos diferencia</h2>
+          <p className="mt-2 text-sm uppercase tracking-wider text-primary">Nuestro Valor Agregado</p>
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
-            <div className="flex gap-4 rounded-lg border border-white/10 bg-white/5 p-5">
-              <Zap className="mt-0.5 h-6 w-6 shrink-0 text-primary" />
-              <div>
-                <h3 className="font-semibold text-white">Conocimiento Técnico</h3>
-                <p className="mt-1 text-sm text-white/60">Profesionales con años de experiencia y el mejor nivel técnico del mercado.</p>
-              </div>
-            </div>
             <div className="flex gap-4 rounded-lg border border-white/10 bg-white/5 p-5">
               <Shield className="mt-0.5 h-6 w-6 shrink-0 text-primary" />
               <div>
-                <h3 className="font-semibold text-white">Calidad y Cumplimiento</h3>
-                <p className="mt-1 text-sm text-white/60">Calidad de servicio, cordialidad y cumplimiento en cada entrega.</p>
-              </div>
-            </div>
-            <div className="flex gap-4 rounded-lg border border-white/10 bg-white/5 p-5">
-              <Settings className="mt-0.5 h-6 w-6 shrink-0 text-primary" />
-              <div>
-                <h3 className="font-semibold text-white">Equipos Certificados</h3>
-                <p className="mt-1 text-sm text-white/60">Equipos testeados rigurosamente y certificados bajo normas nacionales e internacionales.</p>
+                <h3 className="font-semibold text-white">Compromiso y Conocimiento</h3>
+                <p className="mt-1 text-sm text-white/60">Combinamos experiencia técnica, cordialidad y puntualidad para superar las expectativas en cada servicio.</p>
               </div>
             </div>
             <div className="flex gap-4 rounded-lg border border-white/10 bg-white/5 p-5">
               <Users className="mt-0.5 h-6 w-6 shrink-0 text-primary" />
               <div>
-                <h3 className="font-semibold text-white">Experiencia Comprobada</h3>
-                <p className="mt-1 text-sm text-white/60">Agilidad, fluidez y efectividad en la ejecución de cada proyecto.</p>
+                <h3 className="font-semibold text-white">Respaldo Profesional</h3>
+                <p className="mt-1 text-sm text-white/60">Nuestro equipo está conformado por técnicos altamente calificados con años de trayectoria, asegurando soluciones ágiles en tiempo y forma.</p>
+              </div>
+            </div>
+            <div className="flex gap-4 rounded-lg border border-white/10 bg-white/5 p-5 sm:col-span-2">
+              <Settings className="mt-0.5 h-6 w-6 shrink-0 text-primary" />
+              <div>
+                <h3 className="font-semibold text-white">Calidad Certificada</h3>
+                <p className="mt-1 text-sm text-white/60">Disponemos de equipos de alta gama, rigurosamente testeados y bajo certificación de normas nacionales e internacionales.</p>
               </div>
             </div>
           </div>
+
 
           <p className="mt-12 text-lg font-semibold text-primary">Ostec Energy es la mejor opción.</p>
         </main>
