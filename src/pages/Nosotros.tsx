@@ -8,8 +8,8 @@ const Nosotros = () => {
     <div className="min-h-screen text-white" style={{ backgroundImage: `url(${bgHero})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
       <Seo
         path="/nosotros"
-        title="Nosotros | Ostec Energy — Especialistas en Grupos Electrógenos"
-        description="Conocé a Ostec Energy: equipo técnico especializado en venta, alquiler y mantenimiento de grupos electrógenos y tableros de transferencia. Calidad certificada y respaldo profesional."
+        title="Nosotros | Ostec Energy — Grupos Electrógenos"
+        description="Equipo técnico especializado en venta, alquiler y mantenimiento de grupos electrógenos y tableros de transferencia. Calidad certificada."
       />
       <div className="min-h-screen bg-black/60">
         {/* Header */}
