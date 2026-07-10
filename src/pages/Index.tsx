@@ -80,8 +80,9 @@ const Index = () => {
             <span className="text-primary">Mantenimiento Inteligente.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-white/70 sm:text-lg">
-            Nuestra meta es ocuparnos de resolver problemas con eficiencia, seguridad y rapidez en la
-            venta, alquiler y mantenimiento de Grupos Electrógenos y Tableros de Transferencia.
+            Nuestra visión es ser referentes del mercado en soluciones de energía, reconocidos por nuestra
+            capacidad de respuesta, eficiencia y seguridad en la venta, alquiler y mantenimiento de Grupos
+            Electrógenos y Tableros de Transferencia.
           </p>
           <Button size="lg" className="mt-8 text-base" asChild>
             <a href="https://app.ostecenergy.com.ar/auth" target="_blank" rel="noopener noreferrer">Portal Clientes</a>
